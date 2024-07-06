@@ -40,7 +40,7 @@ resource "aws_instance" "tfmyec2" {
     }
 }
 
-resource "aws_security_group" "tf-seg-gr" {
+resource "aws_security_group" "tf-sec-gr" {
   name = "${var.tag}-terraform-sec-grp"
   tags = {
     Name = var.tag
